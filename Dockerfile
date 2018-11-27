@@ -4,5 +4,5 @@ COPY ./target/VehicleTollBoothSystem-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapp
 COPY ./start.sh /
 RUN chmod +x /start.sh
 EXPOSE 8080
-ENTRYPOINT ["/start.sh"]
+ENTRYPOINT ["sh","/start.sh"]
 CMD ["bash"]
